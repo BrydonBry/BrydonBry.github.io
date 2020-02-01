@@ -9,215 +9,246 @@
  </head>
  <style>
 
-  .page-content h1{
+  .page-content{
+    position: relative;
+    top: 0px;
+    box-sizing: border-box;
+  }
+
+   .button-2{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Righteous', cursive;
     color: #D8BFD8;
     text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    top: 50px;
-     font-family: 'Righteous', cursive;
-    }
+    font-size: 27px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 
-   * {box-sizing: border-box;}
-  .container {
-    position: relative;
-    max-width: 900px;
-    padding: 60px 50px;
-    margin: 30px auto 0; 
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container{
+    max-width: 600px;
+    padding: 15px 50px;
+    margin: 15px auto 0;
+    height: 420px;
   }
 
   .container:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 100px;
+    right: 170px;
+    left: 170px;
+    bottom: 40px;
     background: linear-gradient(to right bottom,rgba(43, 44, 78, .5),rgba(104, 22, 96, .5));
   }
 
-  * {
-    padding: 0;
-    box-sizing: border-box;
+  .post {
+    padding: 30px 0 15px;
+    position: relative;
+    left: 50px;
+    bottom: 350px;
     font-family: 'Righteous', cursive;
-}
+    width: 700px;
+  }
 
+  .post h2 {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0;
+    color: #D8BFD8;
+    right: 0;
+    background: #021422;
+    position: absolute;
+    z-index: 2;
+    font-weight: 500; /*толщина букв*/
+    font-size: 1.5em;
+  }
 
-  .button-7 {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    padding: 15px;
+  .post-content{
+    top: 110px;
+    position: absolute;
+    left: 770px;
+  }
+
+  .post-content h3{
     color: #D8BFD8;
     text-transform: uppercase;
-    font-size: 27px;
-     }
-
-   #slider { /*положение слайдера*/
-    position: relative;
-    text-align: center;
-    top: 1px;
-    
-}
-
-#slider{ /*центровка слайдера*/
-  margin: 0 auto;
-}
-
-#slides article{ /*все изображения справа друг от друга*/
-  width: 20%;
-  float: left;
-}
-
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
-  width: 500%;
-  line-height: 0;
-}
-
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-  width: 100%;
-  overflow: hidden;
-}
-
-article img{ /*размер изображений слайдера*/
-  width: 50%;
-}
-
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-  max-width: 960px; /*максимальнная длинна*/
-}
-
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(5), 
-#switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2),
-#switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
-  background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-  float: left;
-  margin: 0 0 0 -84px; /*сдвиг влево*/
-  display: block;
-  height: 68px;
-  width: 68px;
-}
-
-/*настройка переключения и положения для правой стрелки*/
-#switch1:checked ~ #controls label:nth-child(2), 
-#switch2:checked ~ #controls label:nth-child(3),
-#switch3:checked ~ #controls label:nth-child(4),
-#switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(1){
-  background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
-  float: right;
-  margin: 0 -84px 0 0; /*сдвиг вправо*/
-  display: block;
-  height: 68px;
-  width: 68px;
-}
-
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-  cursor: pointer;
-}
-
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
-  display: none;
-}
-
-/*позиция изображения при активации переключателя*/
-#switch1:checked ~ #slides .image{
-  margin-left: 0;
-}
-
-#switch2:checked ~ #slides .image{
-  margin-left: -100%;
-}
-
-#switch3:checked ~ #slides .image{
-  margin-left: -200%;
-}
-
-#switch4:checked ~ #slides .image{
-  margin-left: -300%;
-}
-
-#switch5:checked ~ #slides .image{
-  margin-left: -400%;
-}
-
-#controls{ /*положение блока всех управляющих элементов*/
-  margin: -25% 0 0 0;
-  width: 100%;
-  height: 50px;
-}
-
-#active label{ /*стиль отдельного переключателя*/
-  border-radius: 10px; /*скругление углов*/
-  display: inline-block; /*расположение в строку*/
-  width: 15px;
-  height: 15px;
-  background: #bbb;
-}
-
-#active{ /*расположение блока с переключателями*/
-  margin: 23% 0 0;
-  text-align: center;
-}
-
-#active label:hover{ /*поведение чекбокса при наведении*/
-  background: #76c8ff;
-  border-color: #777 !important; /*выполнение в любом случае*/
-}
-
-/*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
-  background: #18a3dd;
-  border-color: #18a3dd !important;
-}
-
-#slides .image{ /*анимация пролистывания изображений*/
-  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-  opacity: 0.6;
-}
-
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-  transition: opacity 0.2s ease-out;
-}
-
-
-.input {
-    outline:none; /*убираем обводку при клике*/
-    display: block;
-    width: 100%;
-    padding: 0 15px;
-    margin: 10px 0 15px;
-    border-width: 0;
-    line-height: 40px;
-    border-radius: 20px;
-    color: white;
-    background: rgba(255,255,255,.2);
-    font-family: 'Roboto', sans-serif;
-    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
   }
-  .input[type="submit"] {background: #8A2BE2;}
 
-   html {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: scroll;
-  background-attachment: fixed
-}
 
-#stars {
+  
+
+
+  html {height: 100%;
+      scroll-behavior: smooth;
+  }
+
+  body {
+     height: 100%;
+  }
+
+  .button-1 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    color: #D8BFD8;
+    border: 1px solid rgba(255,255,255,.4);
+    background: #000000;
+    font-weight: 300;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 590px;
+    bottom: 80px;
+    cursor: pointer;
+  }
+
+  .button-1:before,
+  .button-1:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+
+  .button-1:before {
+    bottom: 0;
+    left: 0px;
+    border-left: 3px solid pink;
+    border-top: 3px solid pink;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+  }
+
+  .button-1:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+  }
+
+  .button-1:hover:before,
+  .button-1:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  .button-1:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+  .button-1:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+
+
+
+
+
+  *@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+  html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); }
+
+  .slides {
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: 90px;
+    right: 290px;
+  }
+
+  .slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  .slides input { display: none; }
+
+  .slide-container { display: block; }
+
+  .slide {
+    top: o;
+    opacity: 0;
+    width: 500px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nav label {
+    width: 100px;/*толщина стрелочек*/
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 450px;/*положение стрелочек*/
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+  }
+
+  .slide:hover + .nav label { opacity: 0.5; }
+
+  .nav label:hover { opacity: 1; }
+
+  .nav .next { right: 0; }
+
+  input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+  }
+
+  input:checked + .slide-container .nav label { display: block; }
+
+
+
+
+
+  html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: scroll;
+    background-attachment: fixed
+  }
+
+  #stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -283,8 +314,9 @@ label, a{ /*при наведении на стрелки или переклю�
  <body>
 
   <div class="page-content">
-    <a class="button-7" href="https://brydonbry.github.io/spaceballs2/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B01.html"><span>&#x2190Назад</span></a>
-               <h1>Tov №6</h1>
+    <a class="button-2" href="https://brydonbry.github.io/spaceballs2/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B01.html"><span>&#x2190Назад</span></a>
+    <h1></h1>
+  </div>
 
  	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
       <div id='stars'></div>
@@ -292,40 +324,56 @@ label, a{ /*при наведении на стрелки или переклю�
       <div id='stars3'></div>
       <div id='title'></div>
 
- 	<div class="container">
-<div class="all">
-    <input checked type="radio" name="respond" id="desktop">
-      <article id="slider">
-          <input checked type="radio" name="slider" id="switch1">
-          <input type="radio" name="slider" id="switch2">
-          <input type="radio" name="slider" id="switch3">
-          
-        <div id="slides">
-          <div id="overflow">
-            <div class="image">
-              <article><img src="https://4baby.ua/pictures/1067/1067002_1_large.jpg"></article>
-              <article><img src="https://img2.st.kloomba.com/img/used/2017/02/14/13/b/30218167_17.jpg"></article>
-              <article><img src="https://ae01.alicdn.com/kf/HTB15q8_RVXXXXblXXXXq6xXFXXXg/-.jpg"></article>
-            </div>
-          </div>
+
+
+
+<div class="container">
+  <ul class="slides">
+     <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide">
+            <img src="https://cm1.narvii.com/7035/3dc9a80b64ea8f7ad97e0f65fa9fc5b927047bdb_00.jpg" />
         </div>
-        <div id="controls">
-          <label for="switch1"></label>
-          <label for="switch2"></label>
-          <label for="switch3"></label>
-          
+        <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
         </div>
-        <div id="active">
-          <label for="switch1"></label>
-          <label for="switch2"></label>
-          <label for="switch3"></label>
-          
+      </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="https://cm1.narvii.com/7035/3dc9a80b64ea8f7ad97e0f65fa9fc5b927047bdb_00.jpg" />
         </div>
-      </article>
-  </div>
-   
+        <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="https://cm1.narvii.com/7035/3dc9a80b64ea8f7ad97e0f65fa9fc5b927047bdb_00.jpg" />
+        </div>
+        <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+        </div>
+      </li>
+    </ul>     
+    <div class="post-content"><h3>Black Blue</h3></div>
+              <div class="post">
+                   <h2>
+                     <p>Размер:</p>
+                     <p>Вес:</p>
+                     <p>Цена:</p>
+                   </h2>
+              </div>
+                   <a class="button-1" href="https://brydonbry.github.io/spaceballs2/%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B8/%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B81.html">Купить</a>  
 </div>
-          
+
+    
        
 	
  </body>
