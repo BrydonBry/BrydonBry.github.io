@@ -40,6 +40,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: https://brydonbry.github.io/Esfenial/thank-you.html');
 }
 ?>
