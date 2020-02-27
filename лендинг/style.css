@@ -531,8 +531,21 @@ header {
 
 
 /*************************************************************/
-/* PORTFOLIO GRID                                            */
+/* ПЕРВЫЙ ПОСТ                                           */
 /*************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+.fullscreen-background{
+  line-height: 1.5;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.fullscreen-background {
+  padding: 50px 0;
+  background: none;
+  background-size: 10px 10px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -547,6 +560,7 @@ body {
     margin: 50px auto;
     padding: 0 15px;
     background: white;
+    float: right;
 }
 .post-image img {
     width: 100%;
@@ -587,7 +601,7 @@ p {
     body {
         font-size: 16px;
     }
-    .container {
+    .container2 {
         padding: 0 45px;
     }
     .post-image img {
@@ -601,49 +615,53 @@ p {
         margin-left: -30px;
     }
 }
-
 /*************************************************************/
-/* FOOTER                                                    */
+/* ВТОРОЙ ПОСТ                                           */
 /*************************************************************/
-.footer-row {
-  padding: 20px 0;
-  border-top: 2px solid #d9d9d9;
 
+.container3 {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 0 15px;
+    background: white;
+    float: left;
 }
-.footer-col { 
-  padding: 0 10px; 
+.post-image3 img {
+    width: 100%;
+    margin: 0 0 20px 0;
 }
-.footer-col:first-child {
-  text-align: center;
-}
-.social-icons-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.social-icon { 
-  display: block;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 50%;
-  margin-left: 12px;
-  text-align: center;
-  font-size: 15px;
-  color: #a1787e;
-  background-color: rgba(20,20,20,0); 
-  transform: scale(1);
-  transition: .3s linear;
-}
-.social-icon:hover {
-  transform: scale(1.2);
-  background: #a1787e;
-  color: #fff;
+.post h1 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container3 {
+        padding: 0 45px;
+    }
+    .post-image3 img {
+        float: left;
+        width: 300px;
+        margin: 0 0 20px 20px;
+    }
+    .post-header {
+        padding-left: 26px;
+        border-right: 4px solid #D8D8D8;
+        margin-left: -30px;
+        border-left: none;
+
+    }
+}
 /******************************************************************************************/
-/* FOOTER                                                                                 */
+/* ПОДВАЛ                                                                                */
 /******************************************************************************************/
 
 .footer-row {
@@ -661,9 +679,10 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  position: absolute;
 }
 .social-icon { 
-    display: block;
+  display: block;
   width: 24px;
   height: 24px;
   line-height: 24px;
