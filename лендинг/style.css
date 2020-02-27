@@ -19,11 +19,11 @@ a {
 }
 .container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 100%;
   padding: 0 10px;
   margin: 0 auto;
-  min-width: 100%;
-}
+  min-width: 100%;}
+
 .row {
   margin: 0 -10px;
 }
@@ -581,23 +581,18 @@ body{
 body {
     font-family: 'Montserrat', sans-serif;
     color: #606060;
-    font-size: 14px;
+    font-size: 10%;
 }
 .container1 {
-    max-width: 960px;
-    margin: 50px auto;
-    padding: 0 15px;
+    max-width: 70%;
     background: white;
+    margin-top: 7%;
     float: right;
-}
-.post-image img {
-    width: 100%;
-    margin: 0 0 20px 0;
 }
 .post h1 {
     color: #a1787e;
-    font-weight: 400;
-    margin-bottom: 30px;
+    font-weight: 0.1%;
+    margin-bottom: 8%;
 }
 p {
     line-height: 1.5;
@@ -607,37 +602,33 @@ p {
     body {
         font-size: 16px;
     }
-    .container1 {
-        padding: 0 45px;
-    }
+    
     .post-image img {
         float: right;
-        width: 300px;
-        margin: 0 0 20px 20px;
+        height: 40%;
+        margin: 8%;
     }
     .post-header {
-        padding-left: 26px;
+        padding-left: 2.7%;
         border-left: 4px solid #D8D8D8;
-        margin-left: -30px;
+        margin-left: -3.5%;
     }
+    /**ВТОРОЙ БЛОК С ТЕКСТОМ**/
 	.container2 {
-	    max-width: 960px;
-	    padding: 0 15px;
+	    max-width: 70%;
 	    background: white;
 	    float: left;
 	    margin-right: 10%;
-	}
-    .container2{
-    	padding: 0 45px;
+    	padding: 5.5%;
     }
 	.post-image2 img {
         float: left;
-        width: 300px;
+        height: : 40%;
         margin-right: 8%;
         
     }
     .post-header2{
-        padding-right:  26px;
+        padding-right:  2.7%;
         border-right: 4px solid #D8D8D8;
-        margin-right: -30px;
+        margin-right: -3.5%;
     }
