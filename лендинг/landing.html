@@ -7,12 +7,14 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Radley" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="animated.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <noscript><div><img src="https://mc.yandex.ru/watch/23928760" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </head>
 
 <body>
-  <header>
+  <header class="animated fadeInDown">
     <div class="container1">
       <div class="header-row">
         <div class="logo">
@@ -109,13 +111,13 @@
         <div class="container2">
           <div class="post">
               <div class="post-image">
-                  <img src="https://html5book.ru/wp-content/uploads/2019/03/postimage6.jpg">
+                  <img class="animated fadeInRight" src="https://www.mebeldv.com/image/data/statji/black-and-white/interer-v-cherno-belykh-tonakh-1.jpg">
               </div>
               <div class="post-content">
                   <div class="post-header2">
-                      <h1>Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
+                      <h1 class="animated fadeInRight" >Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
                   </div>
-                  <p>С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
+                  <p class="animated fadeInRight" >С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
                       актуальность системы массового участия. В своем стремлении улучшить пользовательский опыт мы
                       упускаем, что интерактивные прототипы, вне зависимости от их уровня, должны быть ассоциативно
                       распределены по отраслям.
@@ -127,13 +129,13 @@
     <div class="container3">
         <div class="post">
             <div class="post-image3">
-                <img src="https://html5book.ru/wp-content/uploads/2019/03/postimage6.jpg">
+                <img class="animated fadeInLeft"  src="https://news.realt.ua/store/news/images/1/100274/68947bf3b2b0c87b48866f03a61aa64e.jpg">
             </div>
             <div class="post-content">
                 <div class="post-header3">
-                    <h1>Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
+                    <h1 class="animated fadeInLeft">Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
                 </div>
-                <p>С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
+                <p  class="animated fadeInLeft">С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
                     актуальность системы массового участия. В своем стремлении улучшить пользовательский опыт мы
                     упускаем, что интерактивные прототипы, вне зависимости от их уровня, должны быть ассоциативно
                     распределены по отраслям.
@@ -142,7 +144,7 @@
         </div>
     </div>
   </div>
-  </div>  
+
 
 
     <footer>
@@ -195,6 +197,17 @@
             webvisor:true
        });
 
+    </script>
+    <script type="text/javascript">
+       $(window).scroll(function (){
+        $(' .post').each(function (){
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+200) {
+                $(this).addClass('');
+            }
+        });
+    });
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
