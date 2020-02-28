@@ -219,8 +219,8 @@ html {
   width:100%;
   height:500px;
   position:relative;
-  overflow:visible;
-  visibility: inherit;
+  overflow:hidden;
+  visibility: visible;
 }
 @keyframes load{
   from{left:-100%;}
