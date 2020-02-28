@@ -119,6 +119,7 @@ html {
   height: 3px;
   background-color:#19121e;
   transition: background-color .3s ease-in-out;
+   visibility: visible;
 }
 .burger span:before,
 .burger span:after {
@@ -129,6 +130,7 @@ html {
   background-color: #19121e;
   transform: rotate(0deg);
   transition: background-color .3s ease-in-out, transform .4s ease-in-out, top .4s ease-in-out;
+   visibility: visible;
 }
 .burger span:before {
     top: -8px;
@@ -148,6 +150,7 @@ html {
   background-color: #a1787e;
   transform: rotate(-45deg);
   top: 0;
+  visibility: visible;
 }
 
 /******************************************************************************************/
