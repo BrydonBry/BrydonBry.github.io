@@ -531,19 +531,16 @@ header {
 /*************************************************************/
 /* ПЕРВЫЙ ПОСТ                                           */
 /*************************************************************/
-@import url('https://fonts.googleapis.com/css?family=Sarabun');
-.fullscreen-background{
-  line-height: 1.5;
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  text-align: center;
+.outer-wrapper{
+  display: inline-block;
+  width: 1000%;
+  height: auto;
 }
-.fullscreen-background {
-  padding: 50px 0;
-  background: none;
-  background-size: 10px 10px;
+.container2{
+    width: 1000%;
+    height: auto;
+    background:none;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -553,12 +550,13 @@ body {
     color: #606060;
     font-size: 14px;
 }
-.container2 {
+.container2  {
     max-width: 960px;
     margin: 50px auto;
     padding: 0 15px;
     background: white;
     float: right;
+      
 }
 .post-image img {
     width: 100%;
@@ -585,7 +583,7 @@ p {
         width: 300px;
         margin: 0 0 20px 20px;
     }
-    .post-header {
+    .post-header2 {
         padding-left: 26px;
         border-left: 4px solid #D8D8D8;
         margin-left: -30px;
@@ -594,21 +592,26 @@ p {
 /*************************************************************/
 /* ВТОРОЙ ПОСТ                                           */
 /*************************************************************/
+.outer-wrapper {
+    display: table;
+    font-weight: 100%;
+    max-width: 100%;
+  }
 
 .container3 {
     max-width: 960px;
     margin: 50px auto;
     padding: 0 15px;
     background: white;
-    float: left;
+   float: left;
 }
 .post-image3 img {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin:  0 20px 0;
 }
 .post h1 {
     color: #222;
-    font-weight: 600;
+    font-weight: 150;
     margin-bottom: 30px;
 }
 
@@ -626,13 +629,13 @@ p {
     .post-image3 img {
         float: left;
         width: 300px;
-        margin: 0 0 20px 20px;
+        margin:  0 20px 20px;
     }
-    .post-header {
+    .post-header3 {
+        margin-left: 10px;
         padding-left: 26px;
         border-right: 4px solid #D8D8D8;
         margin-left: -30px;
-        border-left: none;
     }
 }
 /******************************************************************************************/
@@ -643,6 +646,7 @@ p {
   padding: 20px 0;
   border-top: 2px solid #d9d9d9;
   max-width: 1000%;
+
 }
 .footer-col { 
   padding: 0 10px; 
