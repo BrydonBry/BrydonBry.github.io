@@ -32,7 +32,6 @@ a {
 /******************************************************************************************/
 header {
   margin-bottom: 20px;
-  visibility: visible;
 }
 .header-row {
   display: flex;
@@ -41,6 +40,7 @@ header {
   padding: 20px 0;
   position: relative;
   border-bottom: 2px solid #d9d9d9;
+  visibility: visible;
 }
 .logo-name {
   display: block;
@@ -90,6 +90,9 @@ header {
 #menu.show {
   visibility: visible;
   opacity: 1;
+}
+html {
+  scroll-behavior: smooth;
 }
 #menu li a {
   display: block;
@@ -680,7 +683,7 @@ p {
   text-align: center;
   font-size: 15px;
   color: #a1787e;
-  background: rgba(20,20,20,0); 
+  background: #f0f0f0; 
   transform: scale(1);
   transition: .3s linear;
 }
