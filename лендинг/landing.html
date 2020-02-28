@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>landing</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Radley" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -27,7 +28,7 @@
         </div>
         <ul id="menu">
           <li>
-            <a href="">О нас</a>
+            <a href="#container">О нас</a>
           </li>
           <li class="current">
             <a href="">Регистрация</a>
@@ -107,17 +108,18 @@
       </div>
     </div>
 
-    <div class="outer-wrapper">
+    <div id="container"  class="outer-wrapper">
         <div class="container2">
+          <div class="mow">
           <div class="post">
               <div class="post-image">
-                  <img class="animated fadeInRight" src="https://www.mebeldv.com/image/data/statji/black-and-white/interer-v-cherno-belykh-tonakh-1.jpg">
+                  <img class="animated mow" src="https://www.mebeldv.com/image/data/statji/black-and-white/interer-v-cherno-belykh-tonakh-1.jpg">
               </div>
               <div class="post-content">
                   <div class="post-header2">
-                      <h1 class="animated fadeInRight" >Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
+                      <h1 class="animated mow" >Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
                   </div>
-                  <p class="animated fadeInRight" >С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
+                  <p class="animated mow" >С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
                       актуальность системы массового участия. В своем стремлении улучшить пользовательский опыт мы
                       упускаем, что интерактивные прототипы, вне зависимости от их уровня, должны быть ассоциативно
                       распределены по отраслям.
@@ -125,17 +127,19 @@
               </div>
           </div>
       </div>
+    </div>
+
 
     <div class="container3">
         <div class="post">
             <div class="post-image3">
-                <img class="animated fadeInLeft"  src="https://news.realt.ua/store/news/images/1/100274/68947bf3b2b0c87b48866f03a61aa64e.jpg">
+                <img class="animated mow2"  src="https://news.realt.ua/store/news/images/1/100274/68947bf3b2b0c87b48866f03a61aa64e.jpg">
             </div>
             <div class="post-content">
                 <div class="post-header3">
-                    <h1 class="animated fadeInLeft">Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
+                    <h1 class="animated mow2">Как бы то ни было, консультация с широким активом оказалась чрезвычайно полезной</h1>
                 </div>
-                <p  class="animated fadeInLeft">С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
+                <p  class="animated mow2">С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
                     актуальность системы массового участия. В своем стремлении улучшить пользовательский опыт мы
                     упускаем, что интерактивные прототипы, вне зависимости от их уровня, должны быть ассоциативно
                     распределены по отраслям.
@@ -200,11 +204,23 @@
     </script>
     <script type="text/javascript">
        $(window).scroll(function (){
-        $(' .post').each(function (){
+        $(' .mow').each(function (){
             var imagePos = $(this).offset().top;
             var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+200) {
-                $(this).addClass('');
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass('fadeInRight');
+            }
+        });
+    });
+    </script>
+    </script>
+    <script type="text/javascript">
+       $(window).scroll(function (){
+        $(' .mow2').each(function (){
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+500) {
+                $(this).addClass('fadeInLeft');
             }
         });
     });
