@@ -32,6 +32,7 @@ a {
 /******************************************************************************************/
 header {
   margin-bottom: 20px;
+  visibility: visible;
 }
 .header-row {
   display: flex;
@@ -542,7 +543,7 @@ header {
   height: auto;
 }
 .container2{
-    width: 1000%;
+    
     height: auto;
     background:none;
 }
@@ -556,7 +557,7 @@ body {
     font-size: 14px;
 }
 .container2  {
-    max-width: 960px;
+    max-width: 70%;
     margin: 50px auto;
     padding: 0 15px;
     background: white;
@@ -604,7 +605,7 @@ p {
   }
 
 .container3 {
-    max-width: 960px;
+    max-width: 70%;
     margin: 50px auto;
     padding: 0 15px;
     background: white;
