@@ -220,6 +220,7 @@ html {
   height:500px;
   position:relative;
   overflow:hidden;
+  visibility: inherit;
 }
 @keyframes load{
   from{left:-100%;}
