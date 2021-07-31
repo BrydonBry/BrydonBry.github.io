@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/ctyle.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+
+</head>
+<style type="text/css">
+	body{
+    background-image: url(img/space_whale_pattern.jpg);
+    background-size: 500px ;
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #483D8B;
+   }
+
+@font-face {
+	font-family: 'Jura', sans-serif;
+	font-style: regular;
+	font-weight: regular;
+}
+
+.round {
+    border-radius: 50%;
+    width: 300px; height: 300px; /* Радиус скругления */
+    margin-right: 15px;
+
+   }
+
+
+.name{
+    background-color: #FFF0F5;
+    border-radius: 25px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.bar{
+
+    background-color: #FFF0F5;
+    margin-top: 10px;
+    margin-left: 50px;
+
+    margin-bottom: 10px;
+    border-radius: 25px;
+ }
+.cv{
+    background-color: #FFF0F5;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.experience{
+    background-color: #FFF0F5;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.education{
+background-color: #FFF0F5;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+/* Page Variables */
+
+
+
+#save > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Misc */
+
+abbr[title] {
+    text-decoration: none;
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li + li {
+    margin-top: 0.4em;
+}
+
+.fa, .fab {
+    text-align: center;
+    min-width: 1em;
+}
+
+li .fa, li .fab {
+    margin-right: 0.3em;
+}
+
+/* Page layout */
+
+
+#save > section:first-of-type > aside {
+    flex-basis: var(--sidebar-width);
+    padding: 0.1618in 0 0.1618in 0.1618in;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#save > section:first-of-type > section > header {
+    flex-basis: var(--header-height);
+    flex-grow: 0;
+    padding: 0.1618in;
+}
+
+#save > section:first-of-type > section > section {
+    flex-grow: 1;
+    padding: 0.1618in;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#save > section:first-of-type > section > section > section + section {
+    margin-top: 1em;
+}
+
+#save > section:first-of-type > section > section > section:last-child {
+    margin-top: auto;
+}
+
+
+/* Skills */
+
+
+
+
+.skills > ul > li {
+    display: block;
+    font-weight: 300;
+    
+}
+
+.skills > ul > li > span {
+    
+    padding: 4px 8px;
+    display: inline-block;
+}
+
+/* Experience & Education */
+
+.education ol,
+.experience ol {
+    margin: 0;
+    padding: 0;
+}
+
+.experience ol {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li {
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+    font-weight: 300;
+}
+
+.education ol > li {
+    font-weight: 300;
+}
+
+.experience ol > li + li {
+    margin-top: 1em;
+}
+
+.education ol > li div,
+.experience ol > li header {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li > span,
+.education ol > li p,
+.experience ol > li header p {
+    font-weight: 400;
+}
+
+.experience ol > li header p {
+    font-size: 110%;
+}
+
+.education ol > li div > *:last-child,
+.experience ol > li header > *:last-child {
+    margin-left: auto;
+}
+
+.experience ol > li ul {
+    padding-top: 0.5em;
+}
+
+.experience ol > li ul li {
+    list-style-type: circle;
+    margin-left: 1.618em;
+}
+</style>
+	<body class="letter" data-page-count="1">
+        <section id="save">
+            <section class="sheet" data-page-number="1">
+                <aside class="bar">
+                	<img  src="img/AirBrush_20210503131302-01.jpeg"  class="round">
+                    <section class="contact mt-4">
+                        <h6><b>контакты</b></h6>
+                        <hr style="width: 200px; color: #483D8B; height: 2px;">
+                        <ul>
+                            <li>
+                                <p><img src="img/map_marker_placeholder_location_icon_146883.png" height="25px"> Одесса - жемчужина у моря</p>
+                            </li>
+                            <li>
+                                <p><img src="img/telephone.png" height="25px"> +380 68 875 13 56</p>
+                            </li>
+                            <li>
+                                <p><img src="img/google-plus.png" height="25px"> Bryhel11@gmail.com</p>
+                            </li>
+                            <li>
+                                <p><img src="img/instagram.png" height="25px"> _choosi_</p>
+                            </li>
+                            <li>
+                                <p><img src="img/telegram.png" height="25px"> ElenaBrydko</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills mt-3">
+                        <h6><b>навыки</b></h6>
+                        <hr style="width: 200px; color: #483D8B; height: 2px;">
+                        <ul>
+                            <li><span>HTML, CSS, JS</span></li>
+                            <li><span>Wordpress, MODX</span></li>
+                            <li><span>Figma, MS office</span></li>
+                            <li><span>Русский, украинский, английский (intermidiate+) языки</span></li>
+                            <li><span>Понимание принципа работы с поисковыми системами</span></li>
+                            <li><span>Общее понимание работы с сервисами Google (Google search Console, Google Docs, Google Analytics)</span></li>
+                        </ul>
+                   
+                </aside>
+                    <section>
+                        <header class="name" aria-label="elena">
+                                <div class="m-2">
+                                            <h2 >
+                                                <p>Елена Бридько</p>
+                                            </h2>
+                                            <h6>Junior Content Manager</h6>
+                                            <hr style="width: 300px; color: #483D8B; height: 2px;">
+                                </div>
+                    <section >
+                            <div class="m-2 mt-4">
+                            <section class="summary" >
+                                <ul>
+                                    <li>20 годиков</li>
+                                    <li>Человек, у которого дедлайны в срок</li>
+                                    <li>Мастер "выгуглить" из самых недр интернета даже "ту самую" песню, которую ты слышал в маршрутке</li>
+                                    <li>Гуру многозадачности (совмещаю вязание крючком и разработку, хех)</li>
+                                    <li><b>Мечта:</b> начать карьеру в компании, которой не плевать на сотрудников</li>
+                                </ul>
+                            </section>
+                        </header>
+                        <section class="experience">
+                            <h6 class="mt-4"><b>опыт</b></h6>
+                            <hr style="width: 300px; color: #483D8B; height: 2px;">
+                            <ol>
+                                <li>
+                                    <header>
+                                        <p class="sanserif">Junior Front-end developer (freelance)</p>
+                                        <time>2018 – наст. время</time>
+                                    </header>
+                                    <ul>
+                                        <li>Верстка сайтов, документов, лендингов</li>
+                                        <li>Поиск, оформление, наполнение сайтов контентом</li>
+                                        <li></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <header>
+                                        <p class="sanserif">Контент менеджер, редактор</p>
+                                        <time>Февраль 2019 – Июль 2019</time>
+                                    </header>
+                                    <ul>
+                                        <li>Работа с текстом: форматирование, редактирование</li>
+                                        <li>Оформление web-страниц и лендингов, размещение контента на сайте</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <header>
+                                        <p class="sanserif">Копирайтер в онлайн газете</p>
+                                        <time>Сентябрь 2018 – Декабрь 2018</time>
+                                    </header>
+                                    <ul>
+                                        <li>Работа с огромным колличеством текста: написание, редактирование, размещение</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="experience">
+                            <h6 class="mt-4"><b>образование</b></h6>
+                            <hr style="width: 300px; color: #483D8B; height: 2px;">
+                            
+                            <ol>
+                                <li>
+                                   <header>
+                                        <p class="sanserif">Одесская национальная академия связи имени А. С. Попова</p>
+                                        <time>Сентябрь 2018 – наст. время</time>
+                                    </header>
+                                    <ul>
+                                        <li>Специальность: "Реклама и PR"</li>
+                                        <li>Свободное посещение</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <header>
+                                        <p class="sanserif">11 классов общеобразовательной школы 1-3 ступеней</p>
+                                        <time>Сентябрь 2007 – Июнь 2018</time>
+                                    </header>
+                                    
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+                </section>
+            </div>
+            </section>
+        </section>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
