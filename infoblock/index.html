@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<title>Document</title>
 </head>
 	
@@ -12,36 +13,60 @@
 		margin-left: 20%;
 		margin-right: 20%;
 	}
-	main{
-		min-height: 50px auto;
-	}
+	
 	.infoblock{
 		display: grid;
 		margin-bottom: 5%;
 		min-width: 100%;
 	}
 	
-
+  
 
 /* Блок внимания */
+
 
 	.var1{
 		display: grid;
 		border-left: thick solid lightGray;
 		background: none;
 		padding: 3%;
-        	grid-template-columns: 20% 80%;
+        grid-template-columns: 10% 80%;
 	}
-	.var1 img{
-		align: center;
-       		max-width: 50%; 
-	} 
-
-	.var1 text{
-		text-align: left;
-       		margin-top: 4%; 
-        
+	.icon{
+		font-size: 500%;
 	}
+    .var1 text{
+    	margin-top: 3%;
+    	margin-left: 3%;
+    }
+    @media (max-width: 1100px) {
+    	.icon{
+		font-size: 500%;
+	}
+    .var1 text{
+    	margin-top: 3%;
+    	margin-left: 5%;
+    }
+    }
+     @media (max-width: 995px) {
+    	.icon{
+		font-size: 500%;
+	}
+    .var1 text{
+    	margin-top: 3%;
+    	margin-left: 12%;
+    }
+    }
+     @media (max-width: 700px) {
+    	.icon{
+		font-size: 500%;
+	}
+    .var1 text{
+    	margin-top: 3%;
+    	margin-left: 30%;
+    }
+    }
+	
 	.var2{
 		display: grid;
 		border-left: thick solid SteelBlue;
@@ -65,11 +90,10 @@
 	}
 </style>
 </html>
-
 <!-- Блок внимания -->
 	<main>
-		<div class="infoblock var1 ">
-			<img src="img/4105944-critical-danger-exclamation-hazard-notification-warning_113946.png" alt="icon">
+		<div class="infoblock var1">
+			<i class=" fa fa-exclamation-triangle icon" ></i>
 			<text>Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.</text>
 		</div>
 
