@@ -1,0 +1,71 @@
+.blog-item{font-size:15px;line-height:24px} 
+.margin-right-30{margin-right:30px!important}
+
+.infoblock,.infoblock:hover{display:block;clear:both;margin:10px 0 30px;padding:30px;border:0 solid;font-size:16px;line-height:26px}
+.infoblock .title{font-size:24px;line-height:26px;font-weight:400;margin:0 0 6.5px;display:block;text-decoration:none!important}
+.infoblock a{text-decoration: underline;}
+.infoblock a:hover{text-decoration:none;}
+.infoblock p{margin-bottom:0}
+.infoblock ul,.infoblock li,.infoblock ol{padding-left:0;margin-left:0}
+.infoblock *:last-child{margin-bottom:0!important}
+
+blockquote.infoblock{font-style:italic;text-align:justify}
+blockquote.infoblock cite{display:block;margin-top:10px;text-align:right}
+
+.infoblock.pictext .title,.infoblock.pictext .image,.infoblock.pictext .text{width:50%;float:left;min-height:1px;padding:0 15px;position:relative;text-align:left}
+.infoblock.pictext .image a{position:relative;display:block}
+.infoblock.pictext .image img{position:absolute}
+.infoblock.pictext .image.video{height:1px}
+
+.infoblock.pictext.text-left .title{}
+.infoblock.pictext.text-left .image{}
+.infoblock.pictext.text-left .text{right:50%;margin-top:30px}
+
+.infoblock.pictext.text-right .title{left:50%}
+.infoblock.pictext.text-right .image{right:50%}
+.infoblock.pictext.text-right .text{margin-top:30px}
+
+
+.infoblock.pictext .title{width:50%;float:left;min-height:1px}
+.infoblock.pictext .image{width:50%;float:left;min-height:1px}
+.infoblock.pictext .text{width:50%;float:left;min-height:1px}
+
+.infoblock.pictext.text-bottom .title,.infoblock.pictext.text-bottom .image,.infoblock.pictext.text-bottom .text{width:100%;float:none;}
+.infoblock.pictext.text-bottom .image img{position:static;margin-bottom:13px}
+.infoblock.pictext.text-bottom .image.video{height:auto}
+.infoblock.pictext.text-bottom p{margin-bottom:6.5px}
+
+.infoblock.bg-white{background:#fff;color:#333;border-color:#eee;padding:0}
+.infoblock.bg-white p{color:#333;}
+.infoblock.bg-white .title{color:#000}
+.infoblock.bg-white .text-muted{color:#ddd}
+
+
+.infoblock.bg-light{background:#f5f7f6;color:#333;border-color:#e5e7e6}
+.infoblock.bg-light p{color:#333;}
+.infoblock.bg-light .title{color:#222}
+.infoblock.bg-light .text-muted{color:#d5d7d6}
+
+.infoblock.bg-success{background:#dff0d8;color:#363;border-color:#afd0a8}
+.infoblock.bg-success p{color:#363;}
+.infoblock.bg-success .title{color:#242;}
+.infoblock.bg-success .text-muted{color:#9fc098}
+
+.infoblock.bg-warning{background:#fcf8e3;color:#8a6d3b;border-color:#ecd8a3}
+.infoblock.bg-warning p{color:#8a6d3b;}
+.infoblock.bg-warning .title{color:#7a5d2b;}
+.infoblock.bg-warning .text-muted{color:#bcc893}
+
+.infoblock.border-left{border-left-width:5px;padding-left:25px}
+.infoblock.border-right{border-right-width:5px;padding-right:25px}
+
+@media(max-width:767px){
+	.infoblock.pictext .title,.infoblock.pictext .image,.infoblock.pictext .text{width:100%;float:none;position:static}
+	.infoblock.pictext .image{margin-bottom:13px}
+	.infoblock.pictext.text-left .text,.infoblock.pictext.text-right .text{right:0;margin-top:0}
+	.infoblock.pictext .image img{position:relative}
+	.infoblock.pictext p{margin-bottom:6.5px}
+	.infoblock.pictext .image.video{height:auto}
+}
+
+.thumbnail-img[data-gallery]{cursor:pointer}
