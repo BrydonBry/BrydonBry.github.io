@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet"  type="text/css" href="css/font-awesome.min.css">
 	
 	<title>Document</title>
 </head>
 	
-
+<style type="text/css">
+	
+</style>
 <style type="text/css">
 
 	body{
+		 display: grid;
+        align-items: center;
 		margin-left: 20%;
 		margin-right: 20%;
 	}
+
 	
-	.infoblock{
+	.infoblock {
 		display: grid;
 		margin-bottom: 5%;
 		min-width: 100%;
+		padding: 3%;
 	}
-	
-  
+   
 
 /* Блок внимания */
 
 
-	.var1{
+	.picLeft{
 		display: grid;
 		border-left: thick solid lightGray;
-		background: none;
-		padding: 3%;
         grid-template-columns: 10% 80%;
 	}
+
 	.icon{
 		font-size: 500%;
+		color: silver;
 	}
-    .var1 text{
+    .picLeft text{
     	margin-top: 3%;
     	margin-left: 3%;
     }
     @media (max-width: 1100px) {
+
     	.icon{
 		font-size: 500%;
 	}
-    .var1 text{
+     text{
     	margin-top: 3%;
     	margin-left: 5%;
     }
@@ -54,7 +60,7 @@
     	.icon{
 		font-size: 500%;
 	}
-    .var1 text{
+     text {
     	margin-top: 3%;
     	margin-left: 12%;
     }
@@ -63,56 +69,157 @@
     	.icon{
 		font-size: 500%;
 	}
-    .var1 text{
+	.var{
+		text-align: bottom;
+		align-content: bottom;
+	}
+     text {
     	margin-top: 3%;
     	margin-left: 30%;
     }
+    }}
+	.borderRight{
+	    border-right: thick solid;
     }
 	
-	.var2{
-		display: grid;
-		border-left: thick solid SteelBlue;
-		background: LightSkyBlue;
-		padding: 5%;
-        
+	.borderLeft{
+	    border-left: thick solid ;
+    }
+	.bgWhite {
+	    background: white;
+	    border-color: #e5e7e6;
 	}
-	.var3{
-		display: grid;
-		border-left: thick solid DarkRed;
-		background: Crimson;
-		padding: 5%;
-        
+	.bgLight {
+	    background: #f5f7f6;
+	    border-color: #e5e7e6;
 	}
-	.var4{
-		display: grid;
-		border-left: thick solid DarkOrange;
-		background: Gold;
-		padding: 5%;
-       
+	.bgPrimery {
+	    border-color: #4682B4;
+	    background-color: #6495ED;
+    }
+	.bgDark {
+	    background-color: #F08080;
+	    border-color: #B22222;
 	}
+	cite {
+		text-align: right;
+	}
+
+
 </style>
+
 </body>
-<!-- Блок внимания -->
 	<main>
-		<div class="infoblock  bgLight borderLeft picLeft var1">
+		<!-- Блок внимания -->
+		<div class="infoblock  bgWhite borderLeft picLeft">
 			<i class=" fa fa-exclamation-triangle icon" ></i>
 			<text>Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.</text>
 		</div>
 
-		<div class="infoblock borderLeft bgLight var2">
-			Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.
+		<div class="infoblock borderRight bgLight">
+			<text>Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.</text>
 		</div>
 
-		<div class="infoblock borderLeft bgDanger var3">
-			Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.
+		<div class="infoblock borderLeft bgPrimery">
+			<text>Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.</text>
 		</div>
 
-		<div class="infoblock borderLeft bgWarning var4">
-			Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.
+		<div class="infoblock borderLeft bgDark ">
+			<text>Если вы планируете снимать пару во время бега или прыжков, предупредите, чтобы они оделись соответствующе.</text>
 		</div>
+         
+
+        <!-- Цитата -->
+        <blockquote class="infoblock borderLeft author authorLink bgWhite picLeft">
+        	<i class=" fa fa-quote-left icon"></i>
+		  <p>Можно лежать на мосту и смотреть, как течет вода. Или бегать, или бродить по болоту в красных сапожках, или же свернуться клубочком и слушать, как дождь стучит по крыше. Быть счастливой очень легко.</p>
+		  <cite>Туве Янссон</cite>
+		</blockquote>
+		<blockquote class="infoblock borderRight author authorLink bgLight ">
+		  <p>Можно лежать на мосту и смотреть, как течет вода. Или бегать, или бродить по болоту в красных сапожках, или же свернуться клубочком и слушать, как дождь стучит по крыше. Быть счастливой очень легко.</p>
+		  <cite>Туве Янссон</cite>
+		</blockquote>
+		<blockquote class="infoblock author borderLeft authorLink bgPrimery ">
+		  <p>Можно лежать на мосту и смотреть, как течет вода. Или бегать, или бродить по болоту в красных сапожках, или же свернуться клубочком и слушать, как дождь стучит по крыше. Быть счастливой очень легко.</p>
+		  <cite>Туве Янссон</cite>
+		</blockquote>
+        <blockquote class="infoblock author borderLeft authorLink bgDark ">
+		  <p>Можно лежать на мосту и смотреть, как течет вода. Или бегать, или бродить по болоту в красных сапожках, или же свернуться клубочком и слушать, как дождь стучит по крыше. Быть счастливой очень легко.</p>
+		  <cite>Туве Янссон</cite>
+		</blockquote>         
+ 
+        <!-- Смотрите также -->
+        
+        <div class="infoblock bgWhite borderLeft picLeft">
+			<img src="img/photo_2021-07-22_23-17-09.jpg" alt="photo"  style="width:220%; margin: 2%; ">
+			<div style="margin-left: 20%;"><h2>Магниты</h2>
+	      		<p style="margin-left: 20%;">ОНаши Магниты отличаются от других своей яркостью и насыщенностью.Высокое качество печати и супер магнитная основа делают их самыми магнетическими Магнитами в Мире!</p>
+	  			<a href="img/photo_2021-07-22_23-17-09" target="blank">Перейти</a>
+	  		</div>
+		</div>
+		<div class="infoblock bgLight borderLeft picLeft">
+			<img src="img/photo_2021-07-22_23-17-09.jpg" alt="photo"  style="width:220%; margin: 2%; ">
+			<div style="margin-left: 20%;"><h2>Магниты</h2>
+	      		<p>ОНаши Магниты отличаются от других своей яркостью и насыщенностью.Высокое качество печати и супер магнитная основа делают их самыми магнетическими Магнитами в Мире!</p>
+	  			<a href="img/photo_2021-07-22_23-17-09" target="blank">Перейти</a>
+	  		</div>
+		</div>
+		<div class="infoblock bgPrimery borderLeft picLeft">
+			<img src="img/photo_2021-07-22_23-17-09.jpg" alt="photo"  style="width:220%; margin: 2%; ">
+			<div style="margin-left: 20%;"><h2>Магниты</h2>
+	      		<p>ОНаши Магниты отличаются от других своей яркостью и насыщенностью.Высокое качество печати и супер магнитная основа делают их самыми магнетическими Магнитами в Мире!</p>
+	  			<a href="img/photo_2021-07-22_23-17-09" target="blank">Перейти</a>
+	  		</div>
+		</div>
+		<div class="infoblock bgDark borderLeft picLeft">
+			<img src="img/photo_2021-07-22_23-17-09.jpg" alt="photo"  style="width:220%; margin: 2%; ">
+			<div style="margin-left: 20%;"><h2>Магниты</h2>
+	      		<p>ОНаши Магниты отличаются от других своей яркостью и насыщенностью.Высокое качество печати и супер магнитная основа делают их самыми магнетическими Магнитами в Мире!</p>
+	  			<a href="img/photo_2021-07-22_23-17-09" target="blank">Перейти</a>
+	  		</div>
+		</div>
+
+        <!-- Смотрите также -->
+
+        <div class="infoblock bgLight ">
+        	<div style=" text-align: center;">
+        		<h2>Магниты</h2>
+        		<img src="img/photo_2021-07-22_23-17-09.jpg" width="50%">
+        		<p>ОНаши Магниты отличаются от других своей яркостью и насыщенностью.Высокое качество печати и супер магнитная основа делают их самыми магнетическими Магнитами в Мире!</p>
+        		<a href="img/photo_2021-07-22_23-17-09" >Перейти</a>
+        	</div>
+        </div>
+
+        <!-- Форма -->
+        <div class="infoblock bgLight" style="text-align: center;">
+        	<h2>Магниты</h2>
+        	<p>ОНаши Магниты отличаются от других своей яркостью и насыщенностью.</p>
+	        <form >
+			  <input type="text" placeholder="Name" style="margin: 3%; width: 30%;">
+			  <input type="email" placeholder="Email Address" style="margin: 3%; width: 30%;">
+			  <input type="submit" value="Subscribe">
+			</form>
+        </div>
+
+
+        <!-- Картинка -->
+        <div class="infoblock bgLight">
+        	<figure>
+        		<p></p>
+		    <picture>
+		        <h2 align="center">Магниты</h2>
+		        <img src="img/pexels-eberhard-grossgasteiger-1367192.jpg" width="100%">
+		        <p align="center">ОНаши Магниты отличаются от других своей яркостью и насыщенностью.</p>
+		    </picture>
+		</figure>
+		</div>
+
+
 
 	</main>
-    
+
+     
+        
+
 </body>
 </html>
-	
